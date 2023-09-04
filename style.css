@@ -107,6 +107,11 @@
 {
   margin-top: 110px;
 }
+
+.saut-4
+{
+  margin-top: 70px;
+}
 /* SAUT FIN */
 
 
@@ -129,7 +134,7 @@ nav
     flex-wrap: wrap;
     padding: 0 50px 0 100px;
     position: fixed;
-    top: 30px;
+    top: 0px;
     border-bottom: 1px rgb(245, 245, 245) solid ;
     z-index: 100000000000000000000000000;
     
@@ -161,12 +166,12 @@ nav ul li a
 
 nav ul li a.active, nav ul li a:hover 
 {
-    background-color: hsl(250, 69%, 95%);
+    background-color: hsl(252, 100%, 96%);
 }
 
 #ici
 {
-  background-color: hsl(250, 69%, 95%);
+  background-color: hsl(250, 100%, 87%);
 }
 
 a.cv-latex
@@ -224,7 +229,7 @@ input[type="checkbox"]
 
 .front
 {
-  margin-top: 110px;
+  margin-top: 80px;
   display: flex;
   background: radial-gradient(circle at bottom center,#6E6F73 200px,#3C3E42);
 }
@@ -235,6 +240,8 @@ input[type="checkbox"]
   display: flex;
   margin-left: 10%;
   padding: 2%;
+  overflow-x: auto;
+  
 }
 
 .front .head{
@@ -287,8 +294,9 @@ input[type="checkbox"]
   display: flex;
   padding: 10px;
   gap: 20px;
-   overflow-x: auto; /* Active le défilement horizontal si le contenu dépasse la largeur du conteneur */
-  
+  width: 100%;
+
+
 
 }
 
@@ -303,7 +311,7 @@ input[type="checkbox"]
 }
 
 .front .PC .insousbox:hover{
-  background-color:  rgb(147, 173, 243);
+  background-color:  cyan;
 }
 
 .front .PC .insousbox img{
@@ -312,21 +320,28 @@ input[type="checkbox"]
 
 .front .PC .insousbox .imgb{
   text-align: center;
+  padding-bottom: 10px;
 }
+
 
 
 
 
 .front .PC .insousbox h2{
-  font-size: 19px;
-  color: #a45eff;
+  font-size: 1.2rem;
+  color: var(--violet);
   margin-bottom: 10px;
-  font-weight: 700;
 }
+
+.front .PC .insousbox i{
+  margin-right: 6px;
+  font-size: 17px;
+}
+
 
 .front .PC .insousbox p{
   font-size: 11px;
-  color: rgb(105, 105, 105);
+  color: rgb(102, 102, 102);
 }
 
 
@@ -1303,10 +1318,9 @@ ul li p
 
 .categories .box-container .box p
 {
-  font-size: 1.7rem;
+  font-size: 1rem;
   color:var(--gris-clair);
-  line-height: 1.8;
-  padding:1rem 0;
+
 }
 /* CATEGORIES FIN */
 
@@ -1624,6 +1638,69 @@ transform: scale(1.1);
   }
 }
 @media (max-width: 1120px) {
+
+
+    .front .content 
+  {
+    display: flex;
+    margin-left: 0px;
+    padding: 2%;
+    overflow-x: auto;
+    width: 100%;
+    
+  }
+
+
+
+  .front .head{
+    max-width: 25%;
+    padding: 10px;
+  }
+  
+  .front .head h1{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 22px;
+    
+  }
+  
+  .front .head p{
+    color: white;
+    font-size: 14px;
+    
+  }
+  
+  .front .head .bouton ul li{
+  
+    max-width: 100%;
+    color: white;
+    background-color: #1b7fc2;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center
+  }
+
+  .front .head .bouton ul li a{
+  
+    font-size: 13px;
+  }
+  
+  .front .head .bouton ul li:hover{
+  
+    background-color: #a45eff;
+    
+  }
+  
+  .front .head .bouton ul li a{
+  
+    color: white;
+    font-weight: 600;
+    margin-left: 10px
+  
+    
+  }
 
 .a-propos
 {
